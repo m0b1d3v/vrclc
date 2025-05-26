@@ -1,0 +1,22 @@
+[*]
+
+# File character encoding
+# Possible values: latin1, utf-8, utf-16be, utf-16le
+charset = utf-8
+
+# Format of line endings
+# Possible values: lf, crlf, cr
+end_of_line = lf
+
+# How to handle indentations when the "tab" key is used
+# Possible values: space, tab
+indent_style = tab
+indent_size = 4
+
+# Whether newlines should end a file
+# Possible values: true, false
+insert_final_newline = true
+
+# Whether whitespace should be trimmed
+# Possible values: true, false
+trim_trailing_whitespace = true
