@@ -8,25 +8,26 @@ It is a non-destructive avatar addition to existing VRCLens setups via OSC.
 - An avatar with default VRCLens v1.9.2 setup with write defaults and drone controls enabled
 - Some game console controller like XBox or PlayStation
 - Some avatar edit experience with [VRCFury](https://vrcfury.com/)
+- 40 free bits of parameter space as the custom controller uses 5 floats
 
 ## Controls reference
 
-| Button           | Operation                                                 |
-|------------------|-----------------------------------------------------------|
-| Start            | Start VRCLens, reset if already on, or stop if held       |
-| Select           | Take screenshot                                           |
-| Left stick       | Move drone forward/backward or strafe                     |
-| Right stick      | Pan or rotate drone view depending on right bumper toggle |
-| Left trigger     | Vertical descent                                          |
-| Right trigger    | Vertical ascent                                           |
-| D-pad up/down    | Aperture F-stop increase/decrease to adjust DoF           |
-| D-pad left/right | Zoom level decrease/increase                              |
-| X button         | Cycle through auto-exposure modes                         |
-| Y button         | Cycle through heads-up display sizes                      |
-| A button         | Cycle through avatar auto-focus modes                     |
-| B button         | Cycle through depth of field modes                        |
-| Left bumper      | Currently not used                                        |
-| Right bumper     | Toggle right stick between pan and rotation               |
+| Button           | Operation                                                 | Development note            |
+|------------------|-----------------------------------------------------------|-----------------------------|
+| Start            | Start VRCLens, reset if already on, or stop if held       | VRCLFeatureToggle 254       |
+| Select           | Take screenshot                                           | Steam input                 |
+| Left stick       | Move drone forward/backward or strafe                     | VRCLControllerMove{H/V}     |
+| Right stick      | Pan or rotate drone view depending on right bumper toggle | VRCLControllerRotate{H/V}   |
+| Left trigger     | Vertical descent                                          | VRCLControllerClimb [0, -1] |
+| Right trigger    | Vertical ascent                                           | VRCLControllerClimb [0, +1] |
+| D-pad up/down    | Aperture F-stop increase/decrease to adjust DoF           | VRCLFeatureToggle 193/192   |
+| D-pad left/right | Zoom level decrease/increase                              | VRCLFeatureToggle 101/105   |
+| X button         | Cycle through auto-exposure modes                         | VRCLFeatureToggle 12        |
+| Y button         | Cycle through heads-up display sizes                      | VRCLFeatureToggle 64        |
+| A button         | Cycle through avatar auto-focus modes                     | VRCLFeatureToggle 13        |
+| B button         | Cycle through depth of field modes                        | VRCLFeatureToggle 11        |
+| Left bumper      | Cycle between portrait and landscape                      | VRCLFeatureToggle 222       |
+| Right bumper     | Toggle right stick between pan and rotation               | VRCLFeatureToggle 65        |
 
 ## How to install
 
