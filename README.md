@@ -10,6 +10,18 @@ It is a non-destructive avatar addition to existing VRCLens setups via OSC.
 - Some avatar edit experience with [VRCFury](https://vrcfury.com/)
 - 40 free bits of parameter space as the custom controller uses 5 floats
 
+## Known issues
+
+- General
+  - VRChat window must be active/focused in order for screenshot button to work (no Discord alt-tab!)
+  - Left and right stick click in needs mapping to perform bumper functions so bumpers can control exposure
+- Desktop
+  - Sometimes the camera restarts off-level, normally resetting again fixes this
+  - Swapping the right stick from rotation to panning resets the current rotation value
+  - No easy way to move the focus point
+- VR
+  - Your hand orientation when VRCLens starts sets the default rotation
+
 ## Controls reference
 
 | Button           | Operation                                                 | Development note            |
