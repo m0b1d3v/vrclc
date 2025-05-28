@@ -83,6 +83,7 @@ If you build your avatars without it, you will have to copy some layers and para
 - Download the [VRCLC parameters](./vrclc-parameters.asset)
 - Drag both into your Unity avatar project
 - Add a VRCFury "Full Controller" component to your avatar pointing to the new files.
+In advanced components, make sure you create one global parameter with the "*" character!
 The yellow box warnings can be ignored as they will link to VRCLens during play.
 ![](./screenshots/vrcfury-controller.png)
 - Upload your avatar for testing in either desktop or VR
