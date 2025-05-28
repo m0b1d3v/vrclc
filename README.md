@@ -3,6 +3,9 @@
 This is how I capture photos using a game console controller to operate VRCLens.
 It is a non-destructive avatar addition to existing VRCLens setups via OSC.
 
+Example video:
+https://m0b1.b-cdn.net/vrclc/vrclc-demo-v1.0.mp4
+
 ## Assumptions / Preconditions
 
 - An avatar with default VRCLens v1.9.2 setup with write defaults and drone controls enabled
