@@ -6,6 +6,9 @@ It is a non-destructive avatar addition to existing VRCLens setups via OSC.
 Example video:
 https://m0b1.b-cdn.net/vrclc/vrclc-demo-v1.0.mp4
 
+The world used in the example is [Japanese Alley - VRC Light Volumes Test](https://vrchat.com/home/world/wrld_af756ca8-30ee-41a4-b304-2207ebf79db9/info).
+The creator is [RED_SIM](https://sim.red/), of recent light volumes fame.
+
 ## Assumptions / Preconditions
 
 - An avatar with default VRCLens v1.9.2 setup with write defaults and drone controls enabled
