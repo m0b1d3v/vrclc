@@ -21,12 +21,15 @@ The creator is [RED_SIM](https://sim.red/), of recent light volumes fame.
 - General
   - VRChat window must be active/focused in order for screenshot button to work (no Discord alt-tab!)
   - Left and right stick click in needs mapping to perform bumper functions so bumpers can control exposure
-- Desktop
-  - Sometimes the camera restarts off-level, normally resetting again fixes this
   - Swapping the right stick from rotation to panning resets the current rotation value
+- Desktop
+  - Sometimes the camera restarts off-level, normally pressing Start again fixes this
   - No easy way to move the focus point
 - VR
-  - Your hand orientation when VRCLens starts sets the default rotation
+  - Your hand orientation when VRCLens starts sets the default rotation.
+  I currently fix this by having the vertical horizon element active and continually press Start while moving my hand until it reads zero.
+  - When moving the right stick in one direction for a long pan, eventually movement slows to a crawl.
+  I currently fix this by exiting and re-entering play mode in TouchOSC.
 
 ## Controls reference
 
