@@ -51,6 +51,11 @@ The creator is [RED_SIM](https://sim.red/), of recent light volumes fame.
 
 ## How to install
 
+There are three required files that can be downloaded from the [releases page](https://m0b1.dev/git/vrclc/releases):
+- Animation controller
+- Menu parameters
+- TouchOSC configuration
+
 ### Remap game console controller input on Steam for VRChat
 
 We want to remove all default Steam controller bindings so we can use them to operate VRCLens.
@@ -76,8 +81,7 @@ It is a free program with prompts to buy the one-time purchase lifetime license.
 - Open the connections option via menu option "Edit - Connections"
 - Create and activate an OSC UDP connection to IP address 127.0.0.1, port 9000
 ![](./screenshots/touchosc-connection.png)
-- Download the [VRCLC TouchOSC configuration file](./vrclc-touchosc.tosc)
-- Open the downloaded file via menu option "File - Open..."
+- Open the previously downloaded TouchOSC configuration file via menu option "File - Open..."
 - If your game console controller is connected you should see inputs reflected in TouchOSC after pressing the play icon
 - (Optional) If you want to create your own layout, I suggest starting via menu option "Help - Examples - Gamepad"
 
@@ -87,9 +91,7 @@ We need some controller layers on a VRCLens avatar to translate OSC input to VRC
 This install step assumes the presence and use of the common [VRCFury](https://vrcfury.com/).
 If you build your avatars without it, you will have to copy some layers and parameters by hand.
 
-- Download the [VRCLC animation controller](./vrclc-animation-controller.controller)
-- Download the [VRCLC parameters](./vrclc-parameters.asset)
-- Drag both into your Unity avatar project
+- Drag the previously downloaded animation controller and menu parameters file into your Unity avatar project
 - Add a VRCFury "Full Controller" component to your avatar pointing to the new files.
 In advanced components, make sure you create one global parameter with the "*" character!
 The yellow box warnings can be ignored as they will link to VRCLens during play.
