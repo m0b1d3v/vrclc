@@ -19,6 +19,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: VRCLInterrupt
+    valueType: 0
+    saved: 0
+    defaultValue: 0
+    networkSynced: 1
   - name: vrclcMoveH
     valueType: 1
     saved: 0
