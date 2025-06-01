@@ -24,10 +24,12 @@ The creator is [RED_SIM](https://sim.red/), of recent light volumes fame.
   - Sometimes the camera restarts off-level, normally pressing Start again fixes this
   - No easy way to move the focus point
 - VR
-  - Your hand orientation when VRCLens starts sets the default rotation.
-  I currently fix this by having the vertical horizon element active and continually press Start while moving my hand until it reads zero.
-  - When moving the right stick in one direction for a long pan, eventually movement slows to a crawl.
-  I currently fix this by exiting and re-entering play mode in TouchOSC.
+  - Your hand orientation when first moving the drone sets the default roll.
+  I currently fix this by having the vertical horizon element active and moving once horizon hits zero.
+  This process can be restarted by pressing Start to reset the drone drop.
+  - Using menu controls for movement/rotation and then swapping to controller freezes the drone shortly after.
+  Pressing Start again will allow you to use the controller normally.
+  This is a bug from fixing the problem of not being able to use menu controls at all.
 
 ## Controls reference
 
