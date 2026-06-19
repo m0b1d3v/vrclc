@@ -10,16 +10,14 @@ The creator is [RED_SIM](https://sim.red/), of recent light volumes fame.
 
 ## Assumptions / Preconditions
 
-- An avatar with default VRCLens v1.9.2 setup with write defaults and drone controls enabled
+- An avatar with default VRCLens v1.10.0 setup with write defaults and drone controls enabled
 - Some game console controller like XBox or PlayStation
 - Some avatar edit experience with [VRCFury](https://vrcfury.com/)
-- 40 free bits of parameter space as the custom controller uses 5 floats
 
 ## Known issues
 
 - General
   - VRChat window must be active/focused in order for screenshot button to work (no Discord alt-tab!)
-  - Left and right stick click in needs mapping to perform bumper functions so bumpers can control exposure
 - Desktop
   - Sometimes the camera restarts off-level, normally pressing Start again fixes this
   - No easy way to move the focus point
@@ -33,22 +31,22 @@ The creator is [RED_SIM](https://sim.red/), of recent light volumes fame.
 
 ## Controls reference
 
-| Button           | Operation                                                 | Development note            |
-|------------------|-----------------------------------------------------------|-----------------------------|
-| Start            | Start VRCLens, reset if already on, or stop if held       | VRCLFeatureToggle 254       |
-| Select           | Take screenshot                                           | Steam input                 |
-| Left stick       | Move drone forward/backward or strafe                     | VRCLControllerMove{H/V}     |
-| Right stick      | Pan or rotate drone view depending on right bumper toggle | VRCLControllerRotate{H/V}   |
-| Left trigger     | Vertical descent                                          | VRCLControllerClimb [0, -1] |
-| Right trigger    | Vertical ascent                                           | VRCLControllerClimb [0, +1] |
-| D-pad up/down    | Aperture F-stop increase/decrease to adjust DoF           | VRCLFeatureToggle 193/192   |
-| D-pad left/right | Zoom level decrease/increase                              | VRCLFeatureToggle 101/105   |
-| X button         | Cycle through auto-exposure modes                         | VRCLFeatureToggle 12        |
-| Y button         | Cycle through heads-up display sizes                      | VRCLFeatureToggle 64        |
-| A button         | Cycle through avatar auto-focus modes                     | VRCLFeatureToggle 13        |
-| B button         | Cycle through depth of field modes                        | VRCLFeatureToggle 11        |
-| Left bumper      | Cycle between portrait and landscape                      | VRCLFeatureToggle 222       |
-| Right bumper     | Toggle right stick between pan and rotation               | VRCLFeatureToggle 65        |
+| Button           | Operation                                                 | Development note                                |
+|------------------|-----------------------------------------------------------|-------------------------------------------------|
+| Start            | Start VRCLens, reset if already on, or stop if held       | VRCLT_Enabled true/false, VRCLFeatureToggle 254 |
+| Select           | Take screenshot                                           | Steam input                                     |
+| Left stick       | Move drone forward/backward or strafe                     | VRCLControllerMove{H/V}                         |
+| Right stick      | Pan or rotate drone view depending on right bumper toggle | VRCLControllerRotate{H/V}                       |
+| Left trigger     | Vertical descent                                          | VRCLControllerClimb [0, -1]                     |
+| Right trigger    | Vertical ascent                                           | VRCLControllerClimb [0, +1]                     |
+| D-pad up/down    | Aperture F-stop increase/decrease to adjust DoF           | VRCLFeatureToggle 193/192                       |
+| D-pad left/right | Zoom level decrease/increase                              | VRCLFeatureToggle 101/105                       |
+| X button         | Cycle through auto-exposure modes                         | VRCLFeatureToggle 12                            |
+| Y button         | Cycle through heads-up display sizes                      | VRCLFeatureToggle 64                            |
+| A button         | Cycle through avatar auto-focus modes                     | VRCLFeatureToggle 13                            |
+| B button         | Cycle through depth of field modes                        | VRCLFeatureToggle 11                            |
+| Left bumper      | Cycle between portrait and landscape                      | VRCLFeatureToggle 222                           |
+| Right bumper     | Toggle right stick between pan and rotation               | VRCLFeatureToggle 65                            |
 
 ## How to install
 
