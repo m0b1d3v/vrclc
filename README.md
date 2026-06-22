@@ -36,6 +36,7 @@ The creator is [RED_SIM](https://sim.red/), of recent light volumes fame.
 | Start            | Start VRCLens, reset if already on, or stop if held       | VRCLT_Enabled true/false, VRCLFeatureToggle 254 |
 | Select           | Take screenshot                                           | Steam input                                     |
 | Left stick       | Move drone forward/backward or strafe                     | VRCLControllerMove{H/V}                         |
+| Left stick click | Move focus point with left stick while clicked in         | VRCLInt_Focus{H/V}                              |
 | Right stick      | Pan or rotate drone view depending on right bumper toggle | VRCLControllerRotate{H/V}                       |
 | Left trigger     | Vertical descent                                          | VRCLControllerClimb [0, -1]                     |
 | Right trigger    | Vertical ascent                                           | VRCLControllerClimb [0, +1]                     |
