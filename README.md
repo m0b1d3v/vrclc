@@ -20,7 +20,6 @@ The creator is [RED_SIM](https://sim.red/), of recent light volumes fame.
   - VRChat window must be active/focused in order for screenshot button to work (no Discord alt-tab!)
 - Desktop
   - Sometimes the camera restarts off-level, normally pressing Start again fixes this
-  - No easy way to move the focus point
 - VR
   - Your hand orientation when first moving the drone sets the default roll.
   I currently fix this by having the vertical horizon element active and moving once horizon hits zero.
@@ -36,7 +35,7 @@ The creator is [RED_SIM](https://sim.red/), of recent light volumes fame.
 | Start            | Start VRCLens, reset if already on, or stop if held       | VRCLT_Enabled true/false, VRCLFeatureToggle 254 |
 | Select           | Take screenshot                                           | Steam input                                     |
 | Left stick       | Move drone forward/backward or strafe                     | VRCLControllerMove{H/V}                         |
-| Left stick click | Move focus point with left stick while clicked in         | VRCLInt_Focus{H/V}                              |
+| Left stick click | (Desktop only) Move focus point while clicked in          | VRCLInt_Focus{H/V}                              |
 | Right stick      | Pan or rotate drone view depending on right bumper toggle | VRCLControllerRotate{H/V}                       |
 | Left trigger     | Vertical descent                                          | VRCLControllerClimb [0, -1]                     |
 | Right trigger    | Vertical ascent                                           | VRCLControllerClimb [0, +1]                     |
